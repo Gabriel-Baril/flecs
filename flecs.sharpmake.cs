@@ -7,7 +7,7 @@ public class FlecsProject : BaseCppProject
     public FlecsProject()
     {
         Name = "flecs";
-        // SourceRootPath = @"[project.SharpmakeCsPath]";
+        SourceRootPath = @"[project.SharpmakeCsPath]\src";
         AddTargets(TargetUtil.DefaultTarget);
     }
 
@@ -18,7 +18,7 @@ public class FlecsProject : BaseCppProject
 
         conf.SolutionFolder = Constants.EXTERNAL_VS_CATEGORY;
 
-        conf.Output = Project.Configuration.OutputType.None;
+        conf.Output = Project.Configuration.OutputType.Lib;
         conf.TargetPath = @"[project.SharpmakeCsPath]\out\bin\[target.Platform]-[target.Optimization]";
         conf.IntermediatePath = @"[project.SharpmakeCsPath]\out\intermediate\[target.Platform]-[target.Optimization]";
         conf.IncludePaths.Add(@"[project.SharpmakeCsPath]\include");
