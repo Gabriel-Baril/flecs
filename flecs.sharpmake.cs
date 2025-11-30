@@ -2,9 +2,9 @@ using System.IO; // For Path.Combine
 using Sharpmake; // Contains the entire Sharpmake object library.
 
 [Generate]
-public class HdnCodeExternalFlecsProject : BaseCppProject
+public class DmCodeExternalFlecsProject : BaseCppProject
 {
-    public HdnCodeExternalFlecsProject()
+    public DmCodeExternalFlecsProject()
     {
         Name = "dm.code.external.flecs";
         SourceRootPath = @"[project.SharpmakeCsPath]\distr";
