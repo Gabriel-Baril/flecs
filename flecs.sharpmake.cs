@@ -6,7 +6,7 @@ public class HdnCodeExternalFlecsProject : BaseCppProject
 {
     public HdnCodeExternalFlecsProject()
     {
-        Name = "hdn.code.external.flecs";
+        Name = "dm.code.external.flecs";
         SourceRootPath = @"[project.SharpmakeCsPath]\distr";
         AddTargets(TargetUtil.DefaultTarget);
     }
